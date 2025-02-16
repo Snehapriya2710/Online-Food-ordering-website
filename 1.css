@@ -1,0 +1,319 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100%;
+}
+body{
+    height:100%
+}
+.container{
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    height: 100%;
+    overflow: hidden;
+}
+/*----------menu design-------------*/
+#menu{
+    background:ghostwhite;
+}
+.brand-logo{
+    padding: 0 30px;
+}
+.brand-logo img{
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    border-radius: 50px;
+}
+.menu-item a{
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 12px 0;
+    color: black;
+    font-weight: 300;
+    display:flex;
+    flex-wrap: wrap;
+}
+.menu-item a:hover{
+    text-decoration:underline ;
+    color: brown;
+}
+#food-container{
+    background:black;
+    color: white;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+    background-color: black;
+    z-index: 1;
+}
+.util{
+    color: aquamarine;
+    justify-content: space-between;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+#header .address{
+    font-size: 20px;
+}
+.your-address{
+    border: 1px solid aquamarine;
+    color: aquamarine;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.add-box i{
+    font-size: 20px;
+}
+.util i,.user i{
+    font-size: 18px;
+    margin: 0 16px;
+    border: 1px solid aquamarine;
+    padding: 8px 16px;
+    color: aquamarine;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+.util i:hover{
+    color: black;
+    background: aquamarine;
+}
+.food-items{
+
+}
+.#Biriyani,#Chicken,#Paneer,#Chats,#Chinese,#Egg,#Pure-veg,#Sea-foods,#South-indian{
+    margin-top: 40px;
+}
+#Chicken #item-card,#Chats #item-card,#Egg #item-card,#Sea-foods #item-card{
+    background: peachpuff;
+    color: black;
+}
+#Category-name,.item-menu{
+    margin:10px;
+    font-size: 35px;
+    color:gold;
+}
+#item-card{
+    width: 180px;
+    height: 240px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border-radius: 5px;
+    background:white;
+    color: black;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#card-top{
+    display: flex;
+    margin: 5px 0;
+    justify-content: space-between;
+}
+#rating{
+    padding: 7px;
+    color: gold;
+    background: black;
+    font-size: 14px;
+    border-radius: 14px;
+}
+.fa-cart-plus{
+    padding: 6px;
+    background: black;
+    color: aquamarine;
+    cursor: pointer;
+    border-radius: 50%;
+}
+#item-card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+    display: block;
+    margin-bottom: 15px;
+    transition: 0.5s L ease-in-out;
+}
+#item-card:hover img{
+    transform: scale(1.2);
+}
+#item-name{
+    margin: 5px 0;
+    font-weight: 600;
+    color: darkslategray;
+    font-size: 18px;
+}
+#item-price{
+    margin: 0;
+    color: rgb(2,27,27);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#cart{
+    background:ghostwhite;
+    padding-right: 30px;
+    overflow-y: scroll;
+}
+.taste-header{
+    padding-top: 40px;
+    padding-bottom: 10px;
+    position: sticky;
+    top: 0;
+}
+.item-menu{
+    margin: 0;
+    font-size: 30px;
+    margin-top: 40px;
+    color: black;
+    background: ghostwhite;
+}
+.border{
+    width:80px;
+    height: 4px;
+    margin: 3px 0;
+    margin-bottom: 30px;
+    border-radius: 2px;
+    background:brown ;
+}
+.list-card{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.list-card:hover{
+    background: peachpuff;
+}
+.list-card:hover img{
+    transition: 0.5s;
+    transform: scale(1.2);
+
+}
+.list-card img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.list-name{
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:darkred;
+}
+#Category-list{
+    
+}
+.cart-toggle{
+    display: none;
+}
+#cart-page{
+    background: white;
+    margin: 40px 10px;
+    margin-right: 50px;
+    padding: 20px 30px;
+    padding-bottom: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+#cart-title{
+    font-size: 35px;
+    margin: 0;
+    color: black;
+}
+#cart-page table{
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    color: black;
+}
+#cart-page table thead td{
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: black;
+}
+#m-total-amount{
+    display: none;
+}
+#cart-page table tbody td{
+    padding: 10px;
+    font-size: 20px;
+    color: black;
+}
+#cart-page table tbody button{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    background:none ;
+    background: black;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 0 5px;
+    padding:3px 5px;
+}
+#cart-page table tbody img{
+    width: 75px;
+    height: 75px;
+    border-radius: 50px;
+}
+#checkout{
+    text-align: center;
+    margin: 40px auto;
+    border-radius: 5px;
+    background:ghostwhite;
+    padding: 10px 20px;
+}
+#checkout p{
+    margin: 15px 0;
+    float: left;
+}
+#total-price,#total-item{
+    font-size: 25px;
+    color: brown;
+}
+.cart-btn{
+    outline: none;
+    border: none;
+    background: crimson;
+    color: white;
+    padding: 10px 25px;
+    border-radius: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    bottom: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+.cart-btn{
+    color: crimson;
+    background: none;
+    border: 1px solid crimson;
+}
+#delivery{
+    font-size: 20px;
+    color: aqua;
+}
