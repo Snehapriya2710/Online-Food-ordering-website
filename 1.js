@@ -76,7 +76,7 @@ function displayItems(){
         itemCard.appendChild(itemName);
         itemCard.appendChild(itemPrice);
 
-        Biriyani.appendChild(itemCard);
+      
     })
 }
 displayItems();
