@@ -78,5 +78,5 @@ function displayItems(){
 
       
     })
-}
+})
 displayItems();
